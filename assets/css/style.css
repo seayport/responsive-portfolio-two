@@ -1,8 +1,8 @@
 body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #777;
-  line-height: 34px;
+  line-height: 24px;
   background: url("../images/concrete_seamless.png");
 }
 
@@ -68,6 +68,7 @@ h3 {
 #logo {
   width: 250px;
   height: 90px;
+  margin-left: 75px;
   float: left;
   font-family: 'Georgia', Times, Times New Roman, serif;
   text-align: center;
@@ -112,13 +113,11 @@ footer {
   border-top: 8px solid #4aaaa5;
 }
 
-
 /*sidebar*/
 
 .sidebar {
   padding: 30px;
-  width: 100%;
-  max-width: 270px;
+  max-width: 270;
   float: right;
   margin-bottom: 20px;
   background: #fff;
@@ -144,7 +143,6 @@ h3,
   margin-right: 0;
 }
 
-
 /*main*/
 
 #main-container {
@@ -153,9 +151,10 @@ h3,
 
 .main-section {
   padding: 30px;
-  margin: 0 0 40px 0;
+  margin-left: 75px;
+  margin-bottom: 75px;
   width: 100%;
-  max-width: 650px;
+  max-width: 550px;
   float: left;
   background: #fff;
   border: 1px solid #ddd;
@@ -262,7 +261,17 @@ input[type=submit] {
   p {
     margin-bottom: 13px;
   }
+  p:last-child {
+  margin-bottom: 0;
+  }
 
+  h1,
+  h2,
+  h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  font-weight: 700;
+  }
   h1 {
     padding-bottom: 13px;
     font-size: 20px;
@@ -277,12 +286,13 @@ input[type=submit] {
   #masthead {
     position: fixed;
     z-index: 99;
-    margin: 0 0 20px;
+    margin: 0 0 0px;
     }
   #logo {
     width: 100%;
     height: 59px;
     float: left;
+    margin-left: 0px;
     line-height: 59px;
     font-size: 24px;
   }
@@ -311,6 +321,9 @@ input[type=submit] {
   /*sidebar*/
   .sidebar {
     width: 100%;
+    max-width: 540px;
+    float: left;
+    padding: 23px;
     margin-bottom: 13px;
   }
   h3,
@@ -330,8 +343,9 @@ input[type=submit] {
     padding-top: 84.5px;
   }
   .main-section {
-    margin: 0;
-   }
+    margin: 20px;
+  }
+/*main*/
   /*portfolio page*/
   .work {
     position: relative;
@@ -424,6 +438,7 @@ input[type=submit] {
   }
   #logo {
     width: 100%;
+    margin-left: 0px;
     height: 70px;
     float: left;
     line-height: 70px;
@@ -455,9 +470,10 @@ input[type=submit] {
   /*sidebar*/
   .sidebar {
     padding: 23px;
+    float: left;
     width: 100%;
-    max-width: 1080px;
-    margin-bottom: 16px;
+    max-width: 1000px;
+    margin: 16px;
   }
   h3,
   .sidebar h2 {
@@ -477,14 +493,14 @@ input[type=submit] {
   }
   /*main*/
   #main-container {
-    padding: 0px;
+    padding: 100 10 10 10px;
   }
   .main-section {
-    padding: 20px;
-    margin: 10px;
+    padding: 140 2 2 2px;
+    margin: 175 5 5 5px;
     width: 100%;
-    max-width: 650px;
   }
+
   /*portfolio page*/
   .work {
     position: relative;
@@ -512,7 +528,7 @@ input[type=submit] {
   .auth-image {
     width: 100%;
     height: auto;
-    margin-top: 6.5px;
+    margin-top: 15px;
     margin-right: 16px;
     float: left;
   }
@@ -541,7 +557,35 @@ input[type=submit] {
 }
 /*laptop screen*/
 @media screen and (max-width: 980px) {
-  body {
-    ;
+  
+   /*sidebar*/
+
+  .sidebar {
+    padding: 30px;
+    width: ;idth: 100%;
+    max-width: 260;
+    float: right;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+
+  h3,
+  .sidebar h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .social {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+
+  .social:last-child {
+    margin-right: 0;
   }
 }
